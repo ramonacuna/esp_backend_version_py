@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
+    'empresas',
     'tipos_contratos',
+    'tipos_empresas',
 
 ]
 

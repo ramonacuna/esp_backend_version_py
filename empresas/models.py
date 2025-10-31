@@ -7,8 +7,8 @@ class Empresas(models.Model):
     nombre_empresa = models.CharField(unique=True, max_length=200)
     telefono_empresa = models.CharField(unique=True, max_length=200)
     id_tipo_empresa = models.ForeignKey(
-        'TipoEmpresas', 
-        models.PROTECT,  
+        'tipos_empresas.TipoEmpresas', 
+        on_delete=models.PROTECT,
         db_column='id_tipo_empresa'
     )
 
